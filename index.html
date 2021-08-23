@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 24</title>
+  <link rel="stylesheet" href="./main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="block-buttons">
+      <div class="btn-group btn-group-2" role="group" aria-label="Basic example">
+        <button name="00" type="button" class="btn btn-light bold" disabled><i class="bi bi-code-slash"></i></button>
+      </div>
+      <div class="btn-group btn-group-2" role="group" aria-label="Basic example">
+        <button name="1" type="button" class="btn btn-light"><i class="bi bi-type-bold"></i></button>
+        <button name="2" type="button" class="btn btn-light"><i class="bi bi-type-italic"></i></button>
+        <button name="3" type="button" class="btn btn-light"><i class="bi bi-type-underline"></i></button>
+        <button name="4" type="button" class="btn btn-light"><i class="bi bi-type-strikethrough"></i></button>
+      </div>
+      <div class="btn-group btn-group-2" role="group" aria-label="Basic example">
+        <button name="5" type="button" class="btn btn-light"><i class="bi bi-text-left"></i></button>
+        <button name="6" type="button" class="btn btn-light"><i class="bi bi-text-center"></i></button>
+        <button name="7" type="button" class="btn btn-light"><i class="bi bi-text-right"></i></button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            A
+          </button>
+          <ul name="ul1" class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a style="font-family: Arial, Helvetica, sans-serif;" class="dropdown-item" href="#">Arial</a></li>
+            <li><a style="font-family: Georgia, 'Times New Roman', Times, serif;" class="dropdown-item"
+                href="#">Georgia</a></li>
+            <li><a style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="dropdown-item"
+                href="#">Impact</a></li>
+            <li><a style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="dropdown-item" href="#">Tahoma</a>
+            </li>
+            <li><a style="font-family: 'Times New Roman', Times, serif;" class="dropdown-item" href="#">Times New
+                Roman</a></li>
+            <li><a style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="dropdown-item" href="#">Verdana</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-fonts"></i>
+          </button>
+          <ul name="ul2" class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a style="font-size: 12px;" class="dropdown-item" href="#">12px</a></li>
+            <li><a style="font-size: 14px;" class="dropdown-item" href="#">14px</a></li>
+            <li><a style="font-size: 16px;" class="dropdown-item" href="#">16px</a></li>
+            <li><a style="font-size: 18px;" class="dropdown-item" href="#">18px</a></li>
+            <li><a style="font-size: 20px;" class="dropdown-item" href="#">20px</a></li>
+            <li><a style="font-size: 22px;" class="dropdown-item" href="#">22px</a></li>
+            <li><a style="font-size: 25px;" class="dropdown-item" href="#">25px</a></li>
+            <li><a style="font-size: 30px;" class="dropdown-item" href="#">30px</a></li>
+          </ul>
+        </div>
+        <button name="8" type="button" class="btn btn-light"><i class="bi bi-palette-fill"></i></button>
+        <button name="9" type="button" class="btn btn-light"><i class="bi bi-image-fill"></i></button>
+      </div>
+
+      <div class="btn-group btn-group-2 button-lock" role="group" aria-label="Basic example">
+        <button name="10" type="button" class="btn btn-light bold"><i class="bi bi-lock-fill"></i></button>
+      </div>
+      <div style="display: none;" class="btn-group btn-group-2 button-unlock" role="group" aria-label="Basic example">
+        <button name="100" type="button" class="btn btn-light bold"><i class="bi bi-unlock-fill"></i></button>
+      </div>
+    </div>
+    <div class="block-edit-buttons">
+      <div class="btn-group btn-group-2" role="group" aria-label="Basic example">
+        <button name="11" type="button" class="btn btn-light"><i class="bi bi-save-fill"></i></button>
+        <button name="12" type="button" class="btn btn-light"><i class="bi bi-table"></i></button>
+        <button name="13" type="button" class="btn btn-light"><i class="bi bi-list-ol"></i></button>
+        <button name="14" type="button" class="btn btn-light"><i class="bi bi-list-ul"></i></button>
+      </div>
+    </div>
+    <div class="modal modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Choose text color</h5>
+            <button name="81" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-body1">
+            <div class="text-color" style="background-color: LightSeaGreen;"></div>
+            <div class="text-color" style="background-color: DarkCyan;"></div>
+            <div class="text-color" style="background-color: Green;"></div>
+            <div class="text-color" style="background-color: darkgreen;"></div>
+            <div class="text-color" style="background-color: DeepSkyBlue;"></div>
+            <div class="text-color" style="background-color: Blue;"></div>
+            <div class="text-color" style="background-color: MediumSlateBlue;"></div>
+            <div class="text-color" style="background-color: DarkSlateBlue;"></div>
+            <div class="text-color" style="background-color: Navy;"></div>
+            <div class="text-color" style="background-color: MidnightBlue;"></div>
+            <div class="text-color" style="background-color: Gold;"></div>
+            <div class="text-color" style="background-color: Orange;"></div>
+            <div class="text-color" style="background-color: DarkOrange;"></div>
+            <div class="text-color" style="background-color: Chocolate;"></div>
+            <div class="text-color" style="background-color: Tomato;"></div>
+            <div class="text-color" style="background-color: OrangeRed;"></div>
+            <div class="text-color" style="background-color: WhiteSmoke;"></div>
+            <div class="text-color" style="background-color: Gainsboro;"></div>
+            <div class="text-color" style="background-color: DarkGrey;"></div>
+            <div class="text-color" style="background-color: DimGrey;"></div>
+            <div class="text-color" style="background-color: Black;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Choose background color or image</h5>
+            <button name="91" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">Colors</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Images</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Files</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="modal-body2">
+                  <div class="background-color" style="background-color: LightSeaGreen;"></div>
+                  <div class="background-color" style="background-color: DarkCyan;"></div>
+                  <div class="background-color" style="background-color: Green;"></div>
+                  <div class="background-color" style="background-color: darkgreen;"></div>
+                  <div class="background-color" style="background-color: DeepSkyBlue;"></div>
+                  <div class="background-color" style="background-color: Blue;"></div>
+                  <div class="background-color" style="background-color: MediumSlateBlue;"></div>
+                  <div class="background-color" style="background-color: DarkSlateBlue;"></div>
+                  <div class="background-color" style="background-color: Navy;"></div>
+                  <div class="background-color" style="background-color: MidnightBlue;"></div>
+                  <div class="background-color" style="background-color: Gold;"></div>
+                  <div class="background-color" style="background-color: Orange;"></div>
+                  <div class="background-color" style="background-color: DarkOrange;"></div>
+                  <div class="background-color" style="background-color: Chocolate;"></div>
+                  <div class="background-color" style="background-color: Tomato;"></div>
+                  <div class="background-color" style="background-color: OrangeRed;"></div>
+                  <div class="background-color" style="background-color: WhiteSmoke;"></div>
+                  <div class="background-color" style="background-color: Gainsboro;"></div>
+                  <div class="background-color" style="background-color: DarkGrey;"></div>
+                  <div class="background-color" style="background-color: DimGrey;"></div>
+                  <div class="background-color" style="background-color: Black;"></div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="modal-body3">
+                  <div class="background-image"></div>
+                  <div class="background-image"></div>
+                  <div class="background-image"></div>
+                  <div class="background-image"></div>
+                  <div class="background-image"></div>
+                  <div class="background-image"></div>
+                  <div class="background-image"></div>
+                  <div class="background-image"></div>
+                  <div class="background-image"></div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="mb-3">
+                  <label for="formFile" class="form-label"></label>
+                  <input class="form-control form-control-file" type="file" id="formFile">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal3" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div style="justify-content: center;" class="modal-header">
+            <h3 style="font-weight: 700;" class="modal-title">Sing In</h3>
+          </div>
+          <div class="modal-body">
+            <input class="form-control form-control-login" type="text" placeholder="Login here.."
+              aria-label="default input example">
+            <p></p>
+            <input class="form-control form-control-password" type="password" placeholder="Password here.."
+              aria-label="default input example">
+            <p></p>
+            <p class="value-empty">Value is empty</p>
+            <p class="check-login-password">Please check your login or password</p>
+            <input class="button-sing-in" type="button" value="Sing In">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal4" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create table</h5>
+            <button name="44" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body4">
+            <div class="modal4-left">
+              <div class="mb-3">
+                <label for="formGroupExampleInput1" class="form-label">Count TR:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Type here..">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Width of TD:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Type here..">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput3" class="form-label">Width of border:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Type here..">
+              </div>
+              <div class="message">invalid value</div>
+              <input class="reset" type="button" value="Reset">
+            </div>
+            <div class="modal4-right">
+              <div class="mb-3">
+                <label for="formGroupExampleInput4" class="form-label">Count TD:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Type here..">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput5" class="form-label">Height of TD:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Type here..">
+              </div>
+              <div class="modal4-right-center">
+                <div class="modal4-rcl">
+                  <label for="formGroupExampleInput6" class="form-label">Style of border:</label>
+                  <select id="formGroupExampleInput6" class="form-select" aria-label="Default select example">
+                    <option selected>choose style</option>
+                    <option value="dotted">dotted</option>
+                    <option value="dashed">dashed</option>
+                    <option value="solid">solid</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                  </select>
+                </div>
+                <div class="modal4-rcr">
+                  <label for="formGroupExampleInput7" class="form-label">Color of border:</label>
+                  <select id="formGroupExampleInput7" class="form-select" aria-label="Default select example">
+                    <option selected>choose color</option>
+                    <option value="black">black</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                    <option value="yellow">yellow</option>
+                    <option value="white">white</option>
+                    <option value="grey">grey</option>
+                    <option value="pink">pink</option>
+                  </select>
+                </div>
+              </div>
+              <div class="message"></div>
+              <input class="create-table" type="button" value="Create table">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal5" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create Ol</h5>
+            <button name="55" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="formGroupExampleInput11" class="form-label">Count li item:</label>
+              <input type="text" class="form-control" id="formGroupExampleInput11" placeholder="Type here..">
+            </div>
+            <label for="formGroupExampleInput12" class="form-label">Type mark of list:</label>
+            <select id="formGroupExampleInput12" class="form-select" aria-label="Default select example">
+              <option selected>choose Ol type mark</option>
+              <option value="decimal">1</option>
+              <option value="upper-roman">I</option>
+              <option value="lower-roman">i</option>
+              <option value="upper-alpha">A</option>
+              <option value="lower-alpha">a</option>
+            </select>
+            <div class="modal5-message">invalid value</div>
+            <p></p>
+            <div class="modal5-buttons">
+              <input class="reset-ol" type="button" value="Reset">
+              <input class="create-list" type="button" value="Create list">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal6" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create Ul</h5>
+            <button name="66" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="formGroupExampleInput21" class="form-label">Count li item:</label>
+              <input type="text" class="form-control" id="formGroupExampleInput21" placeholder="Type here..">
+            </div>
+            <label for="formGroupExampleInput22" class="form-label">Type mark of list:</label>
+            <select id="formGroupExampleInput22" class="form-select" aria-label="Default select example">
+              <option selected>choose Ul type mark</option>
+              <option value="circle">circle</option>
+              <option value="disc">disc</option>
+              <option value="square">square</option>
+            </select>
+            <div class="modal6-message">invalid value</div>
+            <p></p>
+            <div class="modal5-buttons">
+              <input class="reset-ul" type="button" value="Reset">
+              <input class="create-list-ul" type="button" value="Create list">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal7" tabindex="-1">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <div class="sign-out-buttons">
+            <input class="cancel" type="button" value="Cancel">
+            <input class="sign-out" type="button" value="Sign out">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="field">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur odio alias a iure modi sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur odio alias a iure modi sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur odio alias a iure modi sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur odio alias a iure modi sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur odio alias a iure modi sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur odio alias a iure modi sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur odio alias a iure modi sunt.</p>
+  </div>
+  <textarea class="field-edit" name="" id="" cols="30" rows="10"></textarea>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+.header {
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field {
+    padding: 20px;
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-position: center;
+}
+
+.field-edit {
+    padding: 50px;
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.text-left {
+    text-align: start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: end;
+}
+
+.modal-body1,
+.modal-body2,
+.modal-body3,
+.modal-body4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: unset;
+}
+
+.text-color, .background-color  {
+    margin: 5px 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.background-image {
+    margin: 5px 0;
+    width: 140px;
+    height: 80px;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.background-image:nth-of-type(1) {
+    background-image: url(./images/image\ 1.jpg);
+}
+
+.background-image:nth-of-type(2) {
+    background-image: url(./images/image\ 2.jpg);
+}
+
+.background-image:nth-of-type(3) {
+    background-image: url(./images/image\ 3.jpg);
+}
+
+.background-image:nth-of-type(4) {
+    background-image: url(./images/image\ 4.jpg);
+}
+
+.background-image:nth-of-type(5) {
+    background-image: url(./images/image\ 5.jpg);
+}
+
+.background-image:nth-of-type(6) {
+    background-image: url(./images/image\ 6.jpg);
+}
+
+.background-image:nth-of-type(7) {
+    background-image: url(./images/image\ 7.jpg);
+}
+
+.background-image:nth-of-type(8) {
+    background-image: url(./images/image\ 8.jpg);
+}
+
+.background-image:nth-of-type(9) {
+    background-image: url(./images/image\ 9.jpg);
+}
+
+.modal-header-sing-in {
+    justify-content: center;
+}
+
+.button-sing-in {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    border: 0px solid #000;
+}
+
+.button-sing-in:hover {
+    background-color: dimgray;
+}
+
+.button-sing-in:focus {
+    box-shadow: 0 0 5px 5px lightgray;
+}
+
+.value-empty, .check-login-password, .modal5-message, .modal6-message{
+    color: red;
+    display: none;
+}
+
+.block-edit-buttons {
+    display: none;
+}
+
+.modal4-left,
+.modal4-right {
+    width: 48%;
+}
+
+.reset {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px solid #000;
+    background-color: crimson;
+    color: white;
+}
+
+.reset:hover,
+.reset-ol:hover, .reset-ul:hover {
+    background-color: darkred;
+}
+
+.reset:focus,
+.reset-ol:focus, .reset-ul:focus {
+    box-shadow: 0 0 3px 3px lightcoral;
+}
+
+.create-table {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px solid #000;
+    background-color: green;
+    color: white;
+}
+.create-table:hover, .create-list:hover, .create-list-ul:hover{
+    background-color: darkgreen;
+} 
+.create-table:focus, .create-list:focus, .create-list-ul:focus{
+    box-shadow: 0 0 3px 3px lime;
+} 
+.modal4-right-center {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal4-rcr,
+.modal4-rcl {
+    width: 48%;
+}
+
+.message {
+    height: 20px;
+    color: red;
+    display: none;
+}
+
+.modal5-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset-ol, .reset-ul {
+    width: 48%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px solid #000;
+    background-color: crimson;
+    color: white;
+}
+
+.create-list, .create-list-ul {
+    width: 48%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px solid #000;
+    background-color: green;
+    color: white;
+}
+.sign-out-buttons{
+    margin: 15px 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.cancel{
+    width: 44%;
+    height: 40px;
+    border: 0px solid #000;
+    border-radius: 5px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+.cancel:hover{
+    background-color: black;
+}
+.cancel:focus{
+    box-shadow: 0 0 3px 3px grey;
+}
+.sign-out{
+    width: 44%;
+    height: 40px;
+    border: 0px solid #000;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+}
+.sign-out:hover{
+    background-color: brown;
+}
+.sign-out:focus{
+    box-shadow: 0 0 3px 3px lightcoral;
+}
